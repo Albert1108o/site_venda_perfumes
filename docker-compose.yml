@@ -1,0 +1,23 @@
+services:
+  app-site1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site_venda_perfumes:/var/www/html
+    depends_on:
+      - db-site1
+
+  db-site1:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: banco-site1
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
