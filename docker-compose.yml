@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./site_venda_perfumes:/var/www/html
+      - ./:/var/www/html
     depends_on:
       - db-site1
 
