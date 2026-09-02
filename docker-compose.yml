@@ -7,7 +7,6 @@ services:
       - "8080:80"
     volumes:
       - ./site_venda_perfumes:/var/www/html
-      - ./default.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - db-site1
 
