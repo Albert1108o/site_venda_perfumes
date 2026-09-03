@@ -38,9 +38,10 @@
         <nav>
         <a href="#novidades">Instagram</a>
         <a href="#sobre">whatsapp</a>
-        <a href="#contato">Loja física</a>
+        <a href="#contato">Telefone:40028922</a>
+        <a href="#email">estagiarios2026@gmail.com</a>
     </nav>
-
+   
     </footer>
 </body>
 </html>
