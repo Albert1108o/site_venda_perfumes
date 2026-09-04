@@ -6,11 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-<<<<<<< HEAD
-      - ./site_venda_perfumes:/var/www/html
-=======
       - ./:/var/www/html
->>>>>>> 11ccdff964a126c60868071e0ca01cfb85f39efb
     depends_on:
       - db-site1
 
